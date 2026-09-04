@@ -34,6 +34,18 @@ body {
   color: var(--ink);
   padding: 0.1em 0.3em;
 }
+.links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: -1.75rem;
+}
+.links a {
+  color: var(--ink-soft);
+  text-decoration: underline;
+  text-decoration-color: var(--rule);
+  text-underline-offset: 3px;
+}
+.links a:hover { color: var(--ink); text-decoration-color: var(--ink); }
 .col {
   width: 100%;
   max-width: 26rem;

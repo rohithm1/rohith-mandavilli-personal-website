@@ -13,10 +13,27 @@ const projects: Project[] = [
     note: "a fantasy football draft room",
   },
   {
+    name: "quant desk",
+    href: "https://github.com/rohithm1/quant-desk",
+    note: "systematic trading research",
+  },
+  {
     name: "engineering blog",
     href: "https://rmengineering.weebly.com/",
-    note: "older builds",
+    note: "high school drawings",
   },
+];
+
+interface Contact {
+  name: string;
+  href: string;
+}
+
+const contacts: Contact[] = [
+  { name: "email", href: "mailto:rohith.mandavilli@gmail.com" },
+  { name: "github", href: "https://github.com/rohithm1" },
+  { name: "linkedin", href: "https://www.linkedin.com/in/rohithmandavilli/" },
+  { name: "resume", href: "/resume.pdf" },
 ];
 
 function el<K extends keyof HTMLElementTagNameMap>(
@@ -35,6 +52,12 @@ if (!app) throw new Error("#app missing");
 
 const hi = el("h1", { class: "hi" }, el("mark", {}, "hi, this is rohith"));
 
+const links = el(
+  "nav",
+  { class: "links" },
+  ...contacts.map((c) => el("a", { href: c.href }, c.name)),
+);
+
 const list = el(
   "ul",
   {},
@@ -51,4 +74,4 @@ const col = el("section", { class: "col" }, el("h2", {}, "side projects"), list)
 
 const footer = el("footer", {}, "rohith mandavilli");
 
-app.append(hi, col, footer);
+app.append(hi, links, col, footer);
