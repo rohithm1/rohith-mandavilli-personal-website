@@ -9,7 +9,7 @@ interface Project {
 const projects: Project[] = [
   {
     name: "2026 ff mock drafter",
-    href: "https://ff-draft-ten.vercel.app",
+    href: "https://ff-draft-2026.vercel.app",
     note: "a fantasy football draft room",
   },
   {
