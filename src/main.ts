@@ -67,6 +67,4 @@ const list = el(
 );
 const col = el("section", { class: "col" }, el("h2", {}, "side projects"), list);
 
-const footer = el("footer", {}, "rohith mandavilli");
-
-app.append(hi, links, col, footer);
+app.append(hi, links, col);

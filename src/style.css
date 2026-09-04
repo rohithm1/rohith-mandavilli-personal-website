@@ -70,7 +70,3 @@ body {
 }
 .col a:hover { text-decoration-color: var(--ink); }
 .col .note { color: var(--ink-soft); }
-footer {
-  color: var(--ink-soft);
-  font-size: 0.85rem;
-}
