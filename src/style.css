@@ -24,13 +24,13 @@ body {
   gap: 2.5rem;
   padding: 4rem 1.25rem;
 }
-/* every block shares the same width and left edge, so the page reads as one
-   centered column instead of three individually-centered pieces */
+/* one centered column: same width, and the text inside centers too */
 .hi,
 .links,
 .col {
   width: 100%;
   max-width: 26rem;
+  text-align: center;
 }
 .hi {
   font-size: 1.9rem;
@@ -45,6 +45,7 @@ body {
 .links {
   display: flex;
   gap: 1.5rem;
+  justify-content: center;
   margin-top: -1rem;
 }
 .links a {
