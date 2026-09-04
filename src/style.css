@@ -21,11 +21,19 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3.5rem;
+  gap: 2.5rem;
   padding: 4rem 1.25rem;
 }
+/* every block shares the same width and left edge, so the page reads as one
+   centered column instead of three individually-centered pieces */
+.hi,
+.links,
+.col {
+  width: 100%;
+  max-width: 26rem;
+}
 .hi {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 700;
   margin: 0;
 }
@@ -37,7 +45,7 @@ body {
 .links {
   display: flex;
   gap: 1.5rem;
-  margin-top: -1.75rem;
+  margin-top: -1rem;
 }
 .links a {
   color: var(--ink-soft);
@@ -46,10 +54,6 @@ body {
   text-underline-offset: 3px;
 }
 .links a:hover { color: var(--ink); text-decoration-color: var(--ink); }
-.col {
-  width: 100%;
-  max-width: 26rem;
-}
 .col h2 {
   font-size: 0.75rem;
   font-weight: 600;
