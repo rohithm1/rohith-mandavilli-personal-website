@@ -13,11 +13,6 @@ const projects: Project[] = [
     note: "a fantasy football draft room",
   },
   {
-    name: "quant desk",
-    href: "https://github.com/rohithm1/quant-desk",
-    note: "systematic trading research",
-  },
-  {
     name: "engineering blog",
     href: "https://rmengineering.weebly.com/",
     note: "high school drawings",
