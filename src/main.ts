@@ -15,7 +15,7 @@ const projects: Project[] = [
   {
     name: "polis",
     href: "https://polisus.com/",
-    note: "civic tech — easy access to bill data",
+    note: "public access to legislative proceedings",
   },
   {
     name: "engineering blog",
