@@ -13,6 +13,11 @@ const projects: Project[] = [
     note: "a fantasy football draft room",
   },
   {
+    name: "polis",
+    href: "https://polisus.com/",
+    note: "civic tech — easy access to bill data",
+  },
+  {
     name: "engineering blog",
     href: "https://rmengineering.weebly.com/",
     note: "high school drawings",
