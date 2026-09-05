@@ -25,24 +25,16 @@ body {
   padding: 4rem 1.25rem;
 }
 /* one centered column: same width, and the text inside centers too */
-.hi,
 .links,
 .col {
   width: 100%;
   max-width: 26rem;
   text-align: center;
 }
-.hi {
-  font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  margin: 0;
-}
 .links {
   display: flex;
   gap: 1.5rem;
   justify-content: center;
-  margin-top: -1rem;
 }
 .links a {
   color: var(--ink-soft);
