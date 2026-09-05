@@ -50,7 +50,7 @@ function el<K extends keyof HTMLElementTagNameMap>(
 const app = document.querySelector<HTMLDivElement>("#app");
 if (!app) throw new Error("#app missing");
 
-const hi = el("h1", { class: "hi" }, el("mark", {}, "hi, this is rohith"));
+const hi = el("h1", { class: "hi" }, "rohith mandavilli");
 
 const links = el(
   "nav",
