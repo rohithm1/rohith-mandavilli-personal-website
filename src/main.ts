@@ -3,25 +3,12 @@ import "./style.css";
 interface Project {
   name: string;
   href: string;
-  note?: string;
 }
 
 const projects: Project[] = [
-  {
-    name: "2026 ff mock drafter",
-    href: "https://ffdraft2026.vercel.app",
-    note: "a fantasy football draft room",
-  },
-  {
-    name: "polis",
-    href: "https://polisus.com/",
-    note: "public access to legislative proceedings",
-  },
-  {
-    name: "engineering blog",
-    href: "https://rmengineering.weebly.com/",
-    note: "high school drawings",
-  },
+  { name: "'26 Fantasy Draft Helper", href: "https://ffdraft2026.vercel.app" },
+  { name: "polis", href: "https://polisus.com/" },
+  { name: "engineering blog", href: "https://rmengineering.weebly.com/" },
 ];
 
 interface Contact {
@@ -59,15 +46,8 @@ const links = el(
 const list = el(
   "ul",
   {},
-  ...projects.map((p) =>
-    el(
-      "li",
-      {},
-      el("a", { href: p.href }, p.name),
-      p.note ? el("span", { class: "note" }, ` — ${p.note}`) : "",
-    ),
-  ),
+  ...projects.map((p) => el("li", {}, el("a", { href: p.href }, p.name))),
 );
-const col = el("section", { class: "col" }, el("h2", {}, "side projects"), list);
+const col = el("section", { class: "col" }, list);
 
-app.append(links, col);
+app.append(col, links);

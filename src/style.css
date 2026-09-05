@@ -25,16 +25,18 @@ body {
   padding: 4rem 1.25rem;
 }
 /* one centered column: same width, and the text inside centers too */
-.links,
 .col {
   width: 100%;
   max-width: 26rem;
   text-align: center;
 }
 .links {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1rem;
   display: flex;
-  gap: 1.5rem;
-  justify-content: center;
+  gap: 1.25rem;
+  font-size: 0.9rem;
 }
 .links a {
   color: var(--ink-soft);
@@ -43,14 +45,6 @@ body {
   text-underline-offset: 3px;
 }
 .links a:hover { color: var(--ink); text-decoration-color: var(--ink); }
-.col h2 {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  margin: 0 0 0.75rem;
-}
 .col ul { list-style: none; margin: 0; padding: 0; }
 .col li { padding: 0.55rem 0; border-top: 1px solid var(--rule); }
 .col li:last-child { border-bottom: 1px solid var(--rule); }
@@ -62,4 +56,3 @@ body {
   text-underline-offset: 3px;
 }
 .col a:hover { text-decoration-color: var(--ink); }
-.col .note { color: var(--ink-soft); }
