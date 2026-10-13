@@ -14,7 +14,7 @@ const projects: Project[] = [
 const publications: Project[] = [
   {
     name: "Determining ASL Joint Trajectory Similarity Using Dynamic Time Warping (2022)",
-    href: "https://digitalcommons.dartmouth.edu/cs_senior_theses/12",
+    href: "https://digitalcommons.dartmouth.edu/cgi/viewcontent.cgi?article=1011&context=cs_senior_theses",
   },
 ];
 
