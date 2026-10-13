@@ -11,6 +11,13 @@ const projects: Project[] = [
   { name: "engineering blog", href: "https://rmengineering.weebly.com/" },
 ];
 
+const publications: Project[] = [
+  {
+    name: "Determining ASL Joint Trajectory Similarity Using Dynamic Time Warping (2022)",
+    href: "https://digitalcommons.dartmouth.edu/cs_senior_theses/12",
+  },
+];
+
 interface Contact {
   name: string;
   href: string;
@@ -43,11 +50,20 @@ const links = el(
   ...contacts.map((c) => el("a", { href: c.href }, c.name)),
 );
 
-const list = el(
-  "ul",
-  {},
-  ...projects.map((p) => el("li", {}, el("a", { href: p.href }, p.name))),
-);
-const col = el("section", { class: "col" }, list);
+const section = (title: string, items: Project[]) =>
+  el(
+    "section",
+    { class: "col" },
+    el("h2", {}, title),
+    el(
+      "ul",
+      {},
+      ...items.map((p) => el("li", {}, el("a", { href: p.href }, p.name))),
+    ),
+  );
 
-app.append(col, links);
+app.append(
+  section("Projects", projects),
+  section("Research Publications", publications),
+  links,
+);
